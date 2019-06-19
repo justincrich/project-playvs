@@ -9,3 +9,7 @@ export const ERROR_CODES = {
   USER_NOT_FOUND: 'auth/user-not-found',
   USER_NOT_IN_ENV: 'user-not-in-env',
 };
+
+export const PAGE_PATHS = {
+  HOME: '/',
+};

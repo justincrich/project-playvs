@@ -10,6 +10,6 @@ const Body = styled.div`
   justify-content: center;
   flex: 1;
 `;
-export default function NotFound() {
-  return <Body>Page Not Found</Body>;
+export default function Template() {
+  return <Body>Template</Body>;
 }

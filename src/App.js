@@ -1,23 +1,25 @@
 import React, { useContext } from 'react';
-import styles from 'styled-components';
+import styles, { ThemeProvider } from 'styled-components';
 import { StoreContext } from 'services';
 import { Routes } from 'pages';
 import { Provider } from 'react-redux';
-import { Grommet } from 'grommet';
 import { themes, GlobalStyle } from './style';
 
-const Container = styles(Grommet)`
+const Container = styles.div`
   height: 100%;
 `;
+
 function App() {
   const store = useContext(StoreContext);
   return (
     <Provider store={store}>
-      <Container theme={themes.default}>
-        <GlobalStyle />
-        <div id="portals" />
-        <Routes />
-      </Container>
+      <ThemeProvider theme={themes.default}>
+        <Container>
+          <GlobalStyle />
+          <div id="portals" />
+          <Routes />
+        </Container>
+      </ThemeProvider>
     </Provider>
   );
 }
