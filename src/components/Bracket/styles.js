@@ -1,6 +1,5 @@
 import styled from 'styled-components';
 import { SPACING_MEDIUM } from 'style/constants';
-import PopOut from 'components/PopOut';
 import Round from './Round';
 import Game from './Game';
 
@@ -32,5 +31,3 @@ export const StyledGame = styled(Game)``;
 export const StyledRound = styled(Round)``;
 
 export const RoundTitle = styled.span``;
-
-export const MemberPopOut = styled(PopOut)``;
