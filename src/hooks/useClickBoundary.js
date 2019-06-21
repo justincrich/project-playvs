@@ -5,14 +5,14 @@ export default function useClickBoundary(eventCallback) {
   const handleClick = useCallback(
     event => {
       if (!nodeRef.current.contains(event.target)) {
-        eventCallback();
+        eventCallback(event);
       }
     },
     [eventCallback],
   );
   useEffect(() => {
-    document.addEventListener('mousedown', handleClick, false);
-    return () => document.removeEventListener('mousedown', handleClick, false);
+    document.addEventListener('click', handleClick, false);
+    return () => document.removeEventListener('click', handleClick, false);
   }, [handleClick]);
   return nodeRef;
 }

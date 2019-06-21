@@ -1,12 +1,12 @@
-const ACCENT = '#607D8B';
-const DARK_ACCENT = '#455A64';
+const DARK_ACCENT = '#906b39';
+const ACCENT = '#a67938';
 const themes = {
   default: {
     colors: {
       accent: ACCENT,
       accentDark: DARK_ACCENT,
-      background: '#F5F5F5',
-      border: '#BDBDBD',
+      background: '#222222',
+      border: '#454545',
       fontColorDarkBkg: '#fff',
       fontColorInvalid: '#E67B87',
       fontColorLightBkg: '#212121',

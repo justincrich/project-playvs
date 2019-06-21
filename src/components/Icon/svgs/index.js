@@ -125,3 +125,5 @@ export { ReactComponent as plus } from './plus.svg';
 export { ReactComponent as thumbsUp } from './thumbs-up.svg';
 export { ReactComponent as layers } from './layers.svg';
 export { ReactComponent as uploadCloud } from './upload-cloud.svg';
+export { ReactComponent as trophy } from './trophy.svg';
+export { ReactComponent as game } from './game.svg';

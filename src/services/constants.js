@@ -13,3 +13,8 @@ export const ERROR_CODES = {
 export const PAGE_PATHS = {
   HOME: '/',
 };
+
+const basePath = 'https://api.opendota.com/api';
+export const ENDPOINT_URLS = {
+  TEAMS: `${basePath}/teams`,
+};

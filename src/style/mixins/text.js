@@ -2,7 +2,6 @@ import { css } from 'styled-components';
 import { rgba } from '../colors';
 import {
   OPACITY_PASSIVE,
-  COLOR_TEXT,
   OPACITY_NORMAL,
   OPACITY_DISABLED,
 } from '../constants';
@@ -14,13 +13,19 @@ export const TEXT_FONT_FAMILY = css`
 export const TEXT_NORMAL = css`
   ${TEXT_FONT_FAMILY};
   color: ${props =>
-    rgba(COLOR_TEXT, props.disabled ? OPACITY_DISABLED : OPACITY_NORMAL)};
+    rgba(
+      props.theme.colors.fontColorDarkBkg,
+      props.disabled ? OPACITY_DISABLED : OPACITY_NORMAL,
+    )};
 `;
 
 export const TEXT_PASSIVE = css`
   ${TEXT_NORMAL} 
   color: ${props =>
-    rgba(COLOR_TEXT, props.disabled ? OPACITY_DISABLED : OPACITY_PASSIVE)};
+    rgba(
+      props.theme.colors.fontColorDarkBkg,
+      props.disabled ? OPACITY_DISABLED : OPACITY_PASSIVE,
+    )};
   `;
 
 export const TEXT_BODY = css`
@@ -36,7 +41,7 @@ export const TEXT_BODY_SMALL = css`
 `;
 
 export const TEXT_TITLE = css`
-  ${TEXT_PASSIVE}
+  ${TEXT_NORMAL}
   font-weight: bold;
   font-size: ${props => props.theme.fonts.sizes.body};
   line-height: ${props => props.theme.fonts.sizes.bodyHeight};
@@ -51,7 +56,7 @@ export const TEXT_TITLE_SM = css`
 `;
 
 export const TEXT_HEADER = css`
-  ${TEXT_PASSIVE}
+  ${TEXT_NORMAL}
   font-size: ${props => props.theme.fonts.sizes.header};
   line-height: ${props => props.theme.fonts.sizes.headerHeight};
 `;

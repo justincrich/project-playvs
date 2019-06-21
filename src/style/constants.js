@@ -30,9 +30,10 @@ export const FONT_SIZE_LARGE = '24px';
 export const BORDER_RADIUS = '5px';
 
 // SPACING
+export const SPACING_MEDIUM_PX = 20;
 export const SPACING_X_SMALL = '5px';
 export const SPACING_SMALL = '10px';
-export const SPACING_MEDIUM = '20px';
+export const SPACING_MEDIUM = `${SPACING_MEDIUM_PX}px`;
 export const SPACING_LARGE = '30px';
 export const SPACING_X_LARGE = '80px';
 
